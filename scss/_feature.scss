@@ -84,7 +84,7 @@
             margin: 160px 20px 0 20px;
         }
         &__card {       
-            &:nth-of-type(1), &:nth-of-type(2) {
+            &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3) {
                 margin: 0 10px 20px 10px;
             }
         }
@@ -93,9 +93,7 @@
         &__card {
             width: 300px;
             height: 400px;
-            &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3) {
-                margin: 0 0 20px 0;
-            }
+           
             img {
                 width: 40px;
                 height: 50px;
