@@ -1,7 +1,6 @@
 .fact {
     position: relative;
     margin-top: 140px;
-    
     ul {
         @include flex(space-between, row);
     }
@@ -27,25 +26,25 @@
             z-index: 1;
             position: relative;
             
-            &[src="/img/school-black.png"] {
+            &[src="img/school-black.png"] {
                 width: 50px;
                 height: 40px;
                 left: 25px;
                 top: 10px;
             }
-            &[src="/img/health-black.png"] {
+            &[src="img/health-black.png"] {
                 width: 50px;
                 height: 40px;
                 left: 25px;
                 top: 8px;
             }
-            &[src="/img/medical-check.png"] {
+            &[src="img/medical-check.png"] {
                 width: 40px;
                 height: 40px;
                 left: 28px;
                 top: 6px;
             }
-            &[src="/img/education-black.png"] {
+            &[src="img/education-black.png"] {
                 width: 32px;
                 height: 40px;
                 left: 32px;
