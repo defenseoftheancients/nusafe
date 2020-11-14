@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/309459a755.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@300;400;600&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
     <header>
-        <section class="navbar"> 
+        <section class="navbar max-width"> 
             <div class="navbar__left">
                 <i class="fas fa-headphones"></i>
                 <span class="navbar__phone">+1-36-652-5233</span>
@@ -23,10 +24,9 @@
             </div>
         </section>
     </header>
-    <main>
-       
+    <main> 
         <section class="banner">
-            <section class="header">
+            <section class="header max-width">
                 <div class="header__logo">
                     <div><img src="./img/icon.png" alt="logo"></div>
                     <h1><a href="index.html">Nusafe</a></h1>
@@ -55,7 +55,7 @@
                 <a href="#">Learn More</a>
             </div>
         </section>
-        <section class="feature">
+        <section class="feature max-width">
             <span>some features</span>
             <h2>Every Good Act Counts</h2>
             <ul>
@@ -456,7 +456,7 @@
                             <div class="blog__img">
                                 <img src="img/shutterstock-1143708920.png" alt="blog-one">
                             </div>
-                            <div>
+                            <div class="blog__content">
                                 <span>Education</span>
                                 <h4>Spirit forth an bath herb</h4>
                                 <span>
@@ -473,9 +473,9 @@
                             <div class="blog__img">
                                 <img src="img/shutterstock-1312385357.png" alt="blog-two">
                             </div>
-                            <div>
-                                <span>Education</span>
-                                <h4>Spirit forth an bath herb</h4>
+                            <div class="blog__content">
+                                <span>Medical</span>
+                                <h4>Two wherein likenes live</h4>
                                 <span>
                                     <i class="far fa-calendar"></i>
                                     17 Oct, 2019
@@ -488,9 +488,9 @@
                         </li>
                         <li class="blog__listitem">
                             <div class="blog__img"><img src="img/shutterstock-102359161.png" alt="blog-three"></div>
-                            <div>
-                                <span>Education</span>
-                                <h4>Spirit forth an bath herb</h4>
+                            <div class="blog__content">
+                                <span>family plan</span>
+                                <h4>Fill Great She Place Tour</h4>
                                 <span>
                                     <i class="far fa-calendar"></i>
                                     17 Oct, 2019
@@ -506,5 +506,78 @@
             </div>
         </section>
     </main>
+    <footer>
+        <section class="subscribe max-width">
+            <span>newsletter</span>
+            <h2>Get Update Every Week</h2>
+            <form action="#">
+                <input type="email" placeholder="enter your email">
+                <button type="submit">Subscribe now<i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="subscribe__content">
+                <ul>
+                    <li class="subscribe__listitem">
+                        <h5>Custom Care</h5>
+                        <ul class="subscribe__list">
+                            <li><a href="#">Food Service</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Shop Categories</a></li>
+                            <li><a href="#">Get Wishlist</a></li>
+                            <li><a href="#">Social Content</a></li>
+                            <li><a href="#">Free Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="subscribe__listitem">
+                        <h5>Contact Info</h5>
+                        <ul class="subscribe__list">
+                            <li>
+                                <a href="#">House no 25, dreen street melborn dowltown</a>
+                            </li>
+                            <li><a href="#">02-362-254-256</a></li>
+                            <li><a href="#">info@secode.com</a></li>
+                            <li><a href="#">www.secode.com</a></li>
+                        </ul>
+                    </li>
+                    <li class="subscribe__listitem">
+                        <h5>Charirty for</h5>
+                        <ul class="subscribe__list">
+                            <li><a href="#">Poor Kids</a></li>
+                            <li><a href="#">Orphan</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Safe Food</a></li>
+                            <li><a href="#">Clean Water</a></li>
+                            <li><a href="#">Homeless</a></li>
+                        </ul>
+                    </li>
+                    <li class="subscribe__listitem">
+                        <h5>Our Gallery</h5>
+                        <ul class="subscribe__list" id="list-special">
+                            <li class="subscribe__listimg"><img src="img/face-2369766_640.jpg" alt="subscribe-one"></li>
+                            <li class="subscribe__listimg"><img src="img/black-2583771_640.jpg" alt="subscribe-two"></li>
+                            <li class="subscribe__listimg"><img src="img/boys-60679_1280.jpg" alt="subscribe-three"></li>
+                            <li class="subscribe__listimg"><img src="img/poor-boy-4133640_640.jpg" alt="subscribe-four"></li>
+                            <li class="subscribe__listimg"><img src="img/girl-431693_640.jpg" alt="subscribe-five"></li>
+                            <li class="subscribe__listimg"><img src="img/slums-3001031_640.jpg" alt="subscribe-six"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="copyright__box max-width">
+                <div class="copyright__logo">
+                    <div><img src="./img/icon.png" alt="logo"></div>
+                    <h1><a href="index.html">Nusafe</a></h1>
+                </div>
+                <p>Copyright © 2019 <span>Nusafe.</span> All Rights Reserved.</p>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
