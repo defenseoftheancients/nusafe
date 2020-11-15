@@ -1072,28 +1072,130 @@ main {
   background-color: #fd5a5a;
 }
 
+@-webkit-keyframes increase70 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes increase70 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes increase60 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes increase60 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes increase80 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes increase80 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes increase75 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes increase75 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@-webkit-keyframes increase90 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes increase90 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
 .cause #percent-one {
   width: 70%;
+  -webkit-animation: increase70 2s 5;
+          animation: increase70 2s 5;
 }
 
 .cause #percent-two {
   width: 60%;
+  -webkit-animation: increase60 2s 5;
+          animation: increase60 2s 5;
 }
 
 .cause #percent-three {
   width: 80%;
+  -webkit-animation: increase80 2s 5;
+          animation: increase80 2s 5;
 }
 
 .cause #percent-four {
   width: 80%;
+  -webkit-animation: increase80 2s 5;
+          animation: increase80 2s 5;
 }
 
 .cause #percent-five {
   width: 75%;
+  -webkit-animation: increase75 2s 5;
+          animation: increase75 2s 5;
 }
 
 .cause #percent-six {
   width: 90%;
+  -webkit-animation: increase90 2s 5;
+          animation: increase90 2s 5;
 }
 
 .cause__other {

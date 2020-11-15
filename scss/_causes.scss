@@ -140,23 +140,69 @@
             background-color: #fd5a5a;
         }
     }
+    @keyframes increase70 {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 70%;
+        }
+    }
+    @keyframes increase60 {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 60%;
+        }
+    }
+    @keyframes increase80 {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 80%;
+        }
+    }
+    @keyframes increase75 {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 75%;
+        }
+    }
+    @keyframes increase90 {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 90%;
+        }
+    }
     #percent-one {
         width: 70%;
+        animation: increase70 2s 5;
     }
     #percent-two {
         width: 60%;
+        animation: increase60 2s 5;
     }
     #percent-three {
         width: 80%;
+        animation: increase80 2s 5;
     }
     #percent-four {
         width: 80%;
+        animation: increase80 2s 5;
     }
     #percent-five {
         width: 75%;
+        animation: increase75 2s 5;
     }
     #percent-six {
         width: 90%;
+        animation: increase90 2s 5;
     }
     &__other {
         width: 100%;
