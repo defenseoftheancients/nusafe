@@ -1,0 +1,179 @@
+.subscribe {
+    text-align: center;
+    padding: 160px 0 95px 0;
+    
+    > span {
+        position: relative;
+        display: inline-block;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 26px;
+        color: white;
+        z-index: 2;
+        &::after {
+            content: '';
+            position: absolute;  
+            left: 54%;
+            transform: translate(-54%, 0);
+            top: -13px;
+            background: url(../img/bg-2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            width: 50px;
+            height: 54px;
+            z-index: -1;
+        }
+    }
+    > h2 {
+        font-size: 48px;
+        font-family: $three-font;
+        font-weight: lighter;
+        color: white;
+        margin-bottom: 60px;
+    }
+    form {
+        text-align: center;
+        input {
+            background: #404145;
+            display: inline-block;
+            padding: 32px;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            color: #999999;
+            font-size: 16px;
+            max-width: 550px;
+            width: 550px;
+            &::placeholder {
+                color: #999999;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+        button {
+            border-radius: 3px;
+            background: #fd5a5a;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 25px 30px;
+            font-size: 13px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transform: translate(-60px, 0);
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+    &__content {
+        text-align: left;
+        margin-top: 130px;
+        > ul {
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+        }
+    }
+    &__listitem {
+        margin-bottom: 30px;
+        max-width: 262px;
+        h5 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 25px;
+            font-weight: lighter;
+            font-family: $three-font;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-flow: wrap column;
+        li {
+            padding-right: 65px;
+            &:not(:last-of-type) {
+                margin-bottom: 10px;
+               
+            }
+            a {
+                color: #7f8183;
+                font-size: 15px;
+                @include trans-normal(0.5s);
+                &:hover {
+                    color: #fd5a5a;
+                }
+            }
+        }
+    }
+    #list-special {
+        flex-flow: wrap row;
+        justify-content:space-between;
+    }
+    &__listimg {
+        width: 85px;
+        height: 78px;
+        margin-bottom: 5px !important;
+        
+        img {
+            width: 85px;
+            height: 78px;
+            object-fit: cover;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        & {
+            > h2 {
+                font-size: 35px;
+            }
+        }
+        form {
+            input {
+                display: block;
+                width: 100%;
+                margin: 0 auto 20px auto;
+            }
+            button {
+                transform: translate(0, 0);
+                white-space: nowrap;
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        &__listitem {
+            flex-basis: 48.5%;
+            h5 {
+                margin-bottom: 20px;
+                font-size: 18px;
+            }
+            &:nth-of-type(3), &:nth-of-type(4) {
+                flex-basis: 100%;
+                margin: 0 auto 30px auto;
+                text-align: center;
+            }
+        }
+        &__list {
+            li {
+                padding-right: 0px;
+                &:not(:last-of-type) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        &__listimg {
+            flex-basis: 48%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 300px) {
+        &__listitem {
+            flex-basis: 100%;
+            margin: 0 auto 30px auto;
+            text-align: center;
+        }
+    }
+}
